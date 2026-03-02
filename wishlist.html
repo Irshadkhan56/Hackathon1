@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="wishlist">
+    <header>
+      <a href="index.html" class="logo">ShopEase</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <div id="auth-links">
+          <a href="login.html">Login</a>
+          <a href="signup.html">Signup</a>
+        </div>
+      </nav>
+      <div class="nav-icons">
+        <button onclick="toggleTheme()">🌓</button>
+        <a href="wishlist.html" class="badge-icon"
+          >❤️ <span id="wishlist-count" class="badge-count">0</span></a
+        >
+        <a href="cart.html" class="badge-icon"
+          >🛒 <span id="cart-count" class="badge-count">0</span></a
+        >
+        <div class="hamburger">☰</div>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1 style="margin-bottom: 20px">My Wishlist</h1>
+      <!-- This ID is crucial -->
+      <div id="wishlist-items" class="product-grid"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

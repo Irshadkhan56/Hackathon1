@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cart">
+    <header>
+        <a href="index.html" class="logo">ShopEase</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <div id="auth-links"></div>
+        </nav>
+        <div class="nav-icons">
+            <button onclick="toggleTheme()">🌓</button>
+            <a href="wishlist.html" class="badge-icon">❤️ <span id="wishlist-count" class="badge-count">0</span></a>
+            <a href="cart.html" class="badge-icon">🛒 <span id="cart-count" class="badge-count">0</span></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 style="margin-bottom: 20px;">Your Shopping Cart</h1>
+        <div id="cart-items">
+            <!-- Cart items injected by JS -->
+        </div>
+        <div style="text-align:right; margin-top:2rem; border-top: 2px solid #eee; padding-top: 1rem;">
+            <h2>Total: Rs. <span id="cart-total">0</span></h2>
+            <button class="btn btn-primary" style="margin-top:1rem;">Proceed to Checkout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="detail">
+    <header>
+        <a href="index.html" class="logo">ShopEase</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <div id="auth-links"></div>
+        </nav>
+        <div class="nav-icons">
+            <button onclick="toggleTheme()">🌓</button>
+            <a href="wishlist.html" class="badge-icon">❤️ <span id="wishlist-count" class="badge-count">0</span></a>
+            <a href="cart.html" class="badge-icon">🛒 <span id="cart-count" class="badge-count">0</span></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="detail-container">
+            <!-- Product details injected by JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

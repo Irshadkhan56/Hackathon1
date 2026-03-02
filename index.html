@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="home">
+    <!-- Navbar -->
+    <header>
+      <a href="index.html" class="logo">ShopEase</a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <div id="auth-links">
+          <!-- JS will inject Login/Signup or Logout here -->
+          <a href="login.html">Login</a>
+          <a href="signup.html">Signup</a>
+        </div>
+      </nav>
+
+      <div class="nav-icons">
+        <button onclick="toggleTheme()">🌓</button>
+        <a href="wishlist.html" class="badge-icon"
+          >❤️ <span id="wishlist-count" class="badge-count">0</span></a
+        >
+        <a href="cart.html" class="badge-icon"
+          >🛒 <span id="cart-count" class="badge-count">0</span></a
+        >
+        <div class="hamburger">☰</div>
+      </div>
+    </header>
+
+    <!-- Hero Slider Section -->
+    <div class="hero-slider">
+      <div class="slides-container">
+        <!-- Slides injected by JS -->
+      </div>
+      <button class="slider-btn prev-btn">❮</button>
+      <button class="slider-btn next-btn">❯</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Controls -->
+      <div class="controls">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search products..."
+        />
+        <select id="category-filter" class="filter-select">
+          <option value="All">All Categories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Shoes">Shoes</option>
+          <option value="Clothing">Clothing</option>
+          <option value="Accessories">Accessories</option>
+        </select>
+        <select id="sort-filter" class="filter-select">
+          <option value="default">Sort By</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="product-grid" class="product-grid">
+        <!-- Products injected by JS -->
+      </div>
+
+      <!-- Pagination -->
+      <div id="pagination" class="pagination"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
